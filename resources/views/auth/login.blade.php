@@ -7,10 +7,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <style>
-        body { background: #1a1a2e; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
-        .auth-card { background: #fff; border-radius: 16px; padding: 40px; width: 100%; max-width: 420px; box-shadow: 0 8px 32px rgba(0,0,0,.3); }
+        body { background: #1a1a2e; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 16px; }
+        .auth-card { background: #fff; border-radius: 16px; padding: 36px 32px; width: 100%; max-width: 420px; box-shadow: 0 8px 32px rgba(0,0,0,.3); }
         .brand-title { color: #e94560; font-weight: 800; font-size: 1.6rem; }
-        .toast-container { position: fixed; top: 20px; right: 20px; z-index: 9999; }
+        .toast-container { position: fixed; top: 16px; right: 16px; z-index: 9999; max-width: calc(100vw - 32px); }
+        @media (max-width: 480px) {
+            .auth-card { padding: 28px 20px; border-radius: 12px; }
+        }
     </style>
 </head>
 <body>
