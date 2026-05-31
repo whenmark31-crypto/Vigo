@@ -23,6 +23,7 @@ CREATE TABLE `users` (
   `gender` varchar(50) DEFAULT NULL,
   `phone` varchar(20) DEFAULT NULL,
   `profile_picture` varchar(255) DEFAULT NULL,
+  `profile_picture_base64` longtext DEFAULT NULL,
   `remember_token` varchar(100) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,

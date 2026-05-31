@@ -27,6 +27,7 @@ class User extends Authenticatable
         'gender',
         'phone',
         'profile_picture',
+        'profile_picture_base64',
     ];
 
     public function pcParts()

@@ -9,8 +9,8 @@
 
                 {{-- Avatar + info header --}}
                 <div class="d-flex flex-column flex-sm-row align-items-center align-items-sm-start gap-3 mb-4 pb-3 border-bottom text-center text-sm-start">
-                    @if($user->profile_picture)
-                        <img src="{{ Storage::url($user->profile_picture) }}"
+                    @if($user->profile_picture_base64)
+                        <img src="{{ $user->profile_picture_base64 }}"
                              class="rounded-circle flex-shrink-0"
                              width="88" height="88"
                              style="object-fit:cover;border:3px solid #e94560">

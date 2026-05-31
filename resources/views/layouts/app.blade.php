@@ -144,8 +144,8 @@
             <h5 class="page-title">@yield('title','Dashboard')</h5>
         </div>
         <div class="d-flex align-items-center gap-2 flex-shrink-0">
-            @if(auth()->user()->profile_picture)
-                <img src="{{ Storage::url(auth()->user()->profile_picture) }}"
+            @if(auth()->user()->profile_picture_base64)
+                <img src="{{ auth()->user()->profile_picture_base64 }}"
                      class="rounded-circle flex-shrink-0" width="34" height="34" style="object-fit:cover">
             @else
                 <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center flex-shrink-0"

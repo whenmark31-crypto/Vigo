@@ -23,8 +23,8 @@
                         <td>{{ $i+1 }}</td>
                         <td>
                             <div class="d-flex align-items-center gap-2">
-                                @if($user->profile_picture)
-                                    <img src="{{ Storage::url($user->profile_picture) }}" class="rounded-circle flex-shrink-0" width="32" height="32" style="object-fit:cover">
+                                @if($user->profile_picture_base64)
+                                    <img src="{{ $user->profile_picture_base64 }}" class="rounded-circle flex-shrink-0" width="32" height="32" style="object-fit:cover">
                                 @else
                                     <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center flex-shrink-0"
                                          style="width:32px;height:32px;font-size:.8rem;font-weight:700">
@@ -64,8 +64,8 @@
                 <div class="card-body py-2 px-3">
                     <div class="d-flex align-items-center justify-content-between gap-2">
                         <div class="d-flex align-items-center gap-2 overflow-hidden">
-                            @if($user->profile_picture)
-                                <img src="{{ Storage::url($user->profile_picture) }}" class="rounded-circle flex-shrink-0" width="38" height="38" style="object-fit:cover">
+                            @if($user->profile_picture_base64)
+                                <img src="{{ $user->profile_picture_base64 }}" class="rounded-circle flex-shrink-0" width="38" height="38" style="object-fit:cover">
                             @else
                                 <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center flex-shrink-0"
                                      style="width:38px;height:38px;font-weight:700">
